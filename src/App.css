@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navigation */
+.main-nav {
+  background: #333;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+  color: #42b883;
+}
+
+/* Containers */
+.exam-container,
+.admin-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.exam-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Exam & Questions */
+.part-title {
+  background: #e9ecef;
+  padding: 10px;
+  border-left: 5px solid #007bff;
+  margin-top: 30px;
+}
+
+.question-card {
+  background: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.question-media {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.exam-img,
+.exam-video {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.option-wrapper label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.option-wrapper label:hover {
+  background: #f8f9fa;
+}
+
+.opt-letter {
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+/* Grading States */
+.correct-border {
+  border: 2px solid #28a745;
+  background-color: #f0fff4;
+}
+
+.wrong-border {
+  border: 2px solid #dc3545;
+  background-color: #fff5f5;
+}
+
+.highlight-green {
+  background-color: #d4edda;
+  color: #155724;
+  width: 100%;
+}
+
+.highlight-red {
+  background-color: #f8d7da;
+  color: #721c24;
+  width: 100%;
+}
+
+.text-green {
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.text-red {
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.result-banner {
+  background: #d4edda;
+  padding: 20px;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.submit-btn,
+.save-btn {
+  width: 100%;
+  padding: 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+.retry-btn {
+  margin-top: 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+/* Teacher / Upload Styles */
+.auth-box {
+  margin-bottom: 20px;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.creator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.half {
+  flex: 1;
+}
+
+.half select,
+.half input {
+  width: 100%;
+  padding: 8px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+.options-area {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #e9ecef;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.option-row input {
+  flex: 1;
+  padding: 8px;
+}
+
+.checker {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  min-width: 80px;
+  text-align: center;
+  font-size: 0.8rem;
+  user-select: none;
+}
+
+.checker.active {
+  background: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+/* Upload Component */
+.upload-container {
+  border: 1px dashed #ccc;
+  padding: 15px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.action-btn {
+  background: #6c757d;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.action-btn:disabled {
+  background: #ccc;
+}
+
+.msg {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.msg.success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.msg.error {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.remove-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
